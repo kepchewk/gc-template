@@ -1,0 +1,63 @@
+@import "vars";
+@import "../mixins/media";
+
+/* Скрытие логотипа */
+.gc-account-logo,
+.standard-logo {
+  display: none;
+}
+
+/* Скрытие пустых хлебных крошек */
+.empty-breadcrumbs {
+  display: none;
+}
+
+/* Установка стандартной типографики */
+html,
+body {
+  font-family: $font-text !important;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-black;
+}
+
+html.is-admin-role:not(.is-dev-mode),
+html.is-admin-role:not(.is-dev-mode) body {
+  font-size: 14px;
+}
+
+/* Добавление отступов общему контенту */
+.gc-main-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Контейнер страниц */
+.gc-main-content.with-left-menu .container {
+  margin: 0 auto;
+
+  padding: 0 1rem;
+
+  width: 100%;
+  max-width: 1320px;
+
+  @include media-xl() {
+    max-width: 1140px;
+  }
+
+  @include media-lg() {
+    max-width: 960px;
+  }
+
+  @include media-md() {
+    max-width: 720px;
+  }
+
+  @include media-sm() {
+    max-width: 540px;
+  }
+
+  @include media-xs() {
+    max-width: 100%;
+  }
+}

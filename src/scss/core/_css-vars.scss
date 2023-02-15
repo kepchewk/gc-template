@@ -1,0 +1,25 @@
+:root {
+  /* Fonts */
+  --font-primary: "Golos", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+
+  --font-text: var(--font-primary);
+  --font-heading: var(--font-secondary);
+
+  /* Colors */
+  --color-primary: #2563EB;
+
+  --color-black: #171717;
+  --color-white: #ffffff;
+
+  --color-text: var(--color-black);
+
+  /* Radii */
+  --radius-primary: 8px;
+
+  /* Transition durations */
+  --transition-duration-primary: 0.15s;
+
+  /* Transition timings */
+  --transition-timing-primary: ease;
+}
